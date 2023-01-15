@@ -141,3 +141,65 @@ Comparison operators
 == : will check to see if 2 variables are equal
 != : will check to see if 2 variables are not equal
 >= > < <= = other commonly used operators
+|| = or operator (either condition need to be fulfilled for the statement to be true)
+&& = and operator (both conditions need to be fulfilled for the statement to be true)
+! = not operator (the condition needs to be untrue for the statment to be true)
+
+If statements: used in java for programs to make decisions based upon meeting certain conditions
+         
+         int temp = 32;
+         if (temp >30);
+         System.out.println("its a hot day");
+         else if (temp >20);
+         System.out.println("it is nice outside");
+         else
+         System.out.println(it is cold)
+
+->The method after your if statement needs to be the action that must be performed if the statement is true
+->You start your if statement with if and then followed by else if and else when you wish to end the if statement.
+
+Switch statements: work similarly to if statements, they execute different parts of code based on the value of an expression
+
+        switch(role){
+        case: "admin"
+        System.out.println("You are admin")
+        break;
+        
+        case: "moderator";
+        System.out.println("you are a moderator");
+        break;
+        
+        Default:
+        System.out.println("you are a user)"
+        
+->switch: switch operator
+->fase is a substitute for clauses
+->NOTE: we use break to break out of a switch statement. You do not need to break out of a default statement.
+
+For Loops:
+->In java there are many times where you need to have an action performed multiple times.
+
+      Lets say you want to have this action printed 5 times:
+      
+      System.out.println("Hello World");
+
+You can type this out 5 times, or you can use whats called a for loop.
+
+       for(int i = 0; i<5; i++);
+       System.out.println("Hello World)"
+
+When running a for loop you need to hit 3 main conditions 
+1. You need to declare the loop/counter variable and initialize it(in this case we take our variable "i" and set it to 0)
+2. You need to create the boolean expression to determine the length of the loop (here we set the length to 5, so as long as the value of i stays under 5, then the loop will continue)
+3. Determine what incraments the loop will be going (here "++" means that the loop will be going up in incrament of 1)
+
+How does this loop work?
+1. The first thing that java does is initialize the variable to zero.
+2. It then evaluates the next condition (is i[0]>5?)
+3. If the above condition is true, the loop will execute the body of the statement (In the above case, it will print out "Hello world")
+4. The control will then move on to the next part of the loop which is incrementing the value of i up by 1
+5. It will repeat this process until the 2 second condition is not true anymore, and in that case the control will then move out of the loop
+
+NOTE: For reference you can change what value you want the variable to be instantialized to, you can change the size of the loop, and even change how the loop will be incremented.
+   
+           for(int i = 5; i>0; i--);
