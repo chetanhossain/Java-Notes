@@ -94,3 +94,50 @@ Note: There is an easier way to initialize the array if you already know what it
       
 This will automatically set the size of the array
 Note: In java, arrays are a fixed length, meaning you cannot add or remove any additional items once the array has been set
+
+Multidimensional arrays: in java we use multidimensional arrays to store more complex sets of data, for example we can use a 2 dimensional array to store a matrix or a 3 dimensional array to store data for a cube. This is useful when it comes to scientific computtions. In order to change a one dimensional array into a 2 dimensional array, all you need to do is add an extra set of square brackets 
+
+      int[][] numbers = new int[2][3];
+      ->this matrix will have 2 rows and 3 columns.
+
+What happens if you try to run arrays.toString on a multidimensional array?
+you would just get the addresses of the rows in memory, in order to get print the values of multidimensional arrays, you must ust the method arrays.deepToString
+
+Another way to print multidimensional arrays: 
+    
+      int[][] = numbers {{1,2,3},{4,5,6}};
+      
+ Constants: In java we can change the value of a variable at anytime during the programs life cycle. But what if we want the value of a variable to stay the same every time? 
+
+     final float PI = 3.14;
+     
+Adding the final keyword to any variable will turn it into a constant, therefore making it unable to change its value.
+Note: by convention we normally set final variables to all caps
+
+Casting:
+Lets say:
+
+      short x = 1;
+      int y = x+2;
+
+When you print out the result, the result will be 3. However that happens under the hood is that java first converts the short into an integer and then adds. When moving up in data type, this is known as implicit or automatic casting. The order of data type for implicit casting is as shown:
+
+       byte>short>int>long>long>float>doublbe
+       ----------Implicit casting-------->
+But what would happen if you needed to cast the other way? you would need to EXPLICITLY cast the variable in the method
+
+      short x = 1;
+      int y = (int)x+2;
+      
+Here the value of x is explicitly casted or converted into an integer and then added. Had there have been a decimal value for x, any value after the decimal point would be removed as the value of x gets casted into a integer
+Note: this is only possible when youre casting 2 similar data types. You CANNOT for example, turn a string into an integer, that calls for a seperate method. In order for a string to be recognized as a number, you would have to use whats called a wrapper class
+
+Integer.parseInt();
+
+Why is parsing important?
+Most frameworks for building user interfaces whether youre bulding a desktop, mobile or web application , we will always revieve the input from the user as a string to its important to know how to parse numbers.
+
+Comparison operators
+== : will check to see if 2 variables are equal
+!= : will check to see if 2 variables are not equal
+>= > < <= = other commonly used operators
