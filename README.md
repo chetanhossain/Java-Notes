@@ -203,3 +203,57 @@ How does this loop work?
 NOTE: For reference you can change what value you want the variable to be instantialized to, you can change the size of the loop, and even change how the loop will be incremented.
    
            for(int i = 5; i>0; i--);
+           
+While Loops: While loops are very similar in functionlity, but different in terms of syntax
+
+         int i = 0;
+         while(i>0){
+         System.out.println("Hello World")
+         i--;
+
+For loops are better when you know ahead of time how many times you want your loop to run. While loops are good for when you dont know how many times you need your loop to run. Lets tske an example where the loop will keep running until the user tells us to quit
+
+        Scanner scanner - ew scanner(System.in);
+        string input = "";
+        while(!intput.equals(quit);
+        System.out.println(Input: ");
+        input = scanner.next().toLowerCase();
+        System.out.println(input)
+
+Note: For reference you want to keep you scanner class outside of the loop because had you put it in the loop, if you input 10 different objects the scanner would create 10 different objects instead of creating one object and giving it different values.
+
+Do...While loops: In java there is something called a do while loop which is similar to a while loop but it will always execute at least once.
+
+     do{
+     System.out.println("Input": ");
+     input = scanner.next().toLowerCase();
+     System.out.println(input);
+     }while (!input.equals("quit")
+   
+Do while loops will always run the body of the loop once because its designed to check the condition after executing the body. While people mainly use while loops, there are some situations where do while loops are useful.
+
+Break and continue statements
+ 
+      
+      while(true){
+      System.out.println("Input: ");
+      Input = scanner.next.toLowerCase;
+      if(input.equals("pass");
+      continue;
+      if(input.equals("quit"))
+      break;
+     
+When you add the continue keyword after a condition, then if the condition is fulfilled, the control will move back to the beginning of the loop.
+When you add the break keyword after a condition, then if the condition if fulfilled, the control will move out of the loop.
+In the above mentuoned case, if the user types in pass, the loop will repeat meaning the console wont print anything but it will ask for another input. If the user types in quit, the console wont print anything out and the control will move out of the loop.
+
+For each loop:
+
+       String[] fruits = {"Apple" , "Mango" , "Orange"};
+       for{String fruit: fruits)
+       System.out.println(fruit);
+
+In a for each loop you want to create a variable based on the types of items in the array.
+Limitations of a for each loop:
+->For each loops only iterate forward 
+->You dont have access to each index of the loop. It will only tell you the value of that instance of the array.
